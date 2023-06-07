@@ -1,0 +1,18 @@
+﻿
+<div class="comments">
+    <h3 class="commment-title">2 Comments(2)</h3>
+
+    @foreach (var yorum in Model.Deger2)
+    {
+        <div class="media">
+            <img src="~/organic/orgenik-file/assets/images/blog/user.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+                <h5 class="mt-0">@yorum.KullaniciAdi   <a class="reply-link" href="#"><i class="fas fa-reply-all"></i>Reply</a></h5>
+                @yorum.Yorum
+
+
+            </div>
+        </div>
+    }
+
+</div>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>İş-Match</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon-precomposed" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.png">
+    <link rel="icon" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.png">
+    <link rel="mask-icon" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.svg" color="rgb(36,38,58)">
+    <link rel="shortcut icon" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.png">
+    <link rel="stylesheet" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/css/main.css">
+
+</head>
+<body>
+
+
+    <nav class="header-main dark" style="background-color: #110f24; height:65px">
+
+        <div class="nav-toggle"> </div>
+        <a href="/Home/Index" class="logo" style="line-height:4rem; rel="home"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><path d="M7.335 1.023l2.462.434a1 1 0 0 1 .811 1.159L8.004 17.388a2 2 0 0 1-2.317 1.622l-3.94-.694a1 1 0 0 1-.81-1.159L3.28 3.862a3.5 3.5 0 0 1 4.054-2.839zm7.039 3.272l7.878 1.39a1 1 0 0 1 .812 1.158l-1.997 11.325a5.5 5.5 0 0 1-6.372 4.461l-4.431-.78a1 1 0 0 1-.812-1.16l2.605-14.771a2 2 0 0 1 2.317-1.623z" fill="currentColor" /></svg><span>İŞ-MATCH</span></a>
+        <div class="nav-toggle"></div>
+        <ul class="inline" style="line-height:4rem;">
+            <li><a href="/AnaSayfa/Index" class="active">Anasayfa</a></li>
+            <li><a href="/Iletisim/Index" class="active">İletişim</a></li>
+            <li><a href="/Hakkinda/Index">Hakkımızda</a></li>
+
+        </ul>
+        <ul class="inline right" style="line-height: 4rem; padding-right:80px; float:right">
+            <li class="menu-item menu-item-has-children">
+                <a href="/Bireysel/Bireysel">Profilim</a>
+                <ul class="sub-menu" style="width:137px">
+                    <li class="menu-item" style="width:137px"><a href="/Home/Logout/">Çıkış Yap</a>  </li>
+                </ul>
+        </ul>
+
+    </nav>
+
+    <div class="container body-content">
+        <br />
+
+        @RenderBody()
+        <hr />
+
+        <footer>
+            <section class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mr-auto col-sm-6 col-md-6">
+                                <div class="footer-widget footer-about mb-5 mb-lg-0">
+                                    <img src="https://i.hizliresim.com/axrqqsj.jpg" alt="Maxeo" class="img-fluid">
+                                    <p class="mt-3">İş arayanı ve iş vereni buluşturan platform.</p>
+                                    <ul class="list-inline footer-socials">
+                                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="footer-widget footer-contact mb-5 mb-lg-0">
+                                    <h5 class="widget-title">Konum</h5>
+                                    <ul class="list-unstyled">
+                                        <li> <i class="fa fa-map-marker"></i>Kızılay, Necatibey Cd. No:55, 06250 Çankaya/Ankara</li>
+                                        <li> <i class="fa fa-map-marker"></i>İstanbul, Canımıniçi Cd. No:24, 06250 Kağıthane/İstanbul</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="footer-widget footer-contact mb-5 mb-lg-0">
+                                    <h5 class="widget-title">Adres</h5>
+                                    <div class="footer-gallery">
+                                        <ul>
+                                            <li> <i class="fa fa-envelope"></i>info@ismatch.com</li>
+                                            <li><i class="fa fa-phone"></i>(544) 349 7684</li>
+                                            <li><i class="fa fa-globe"></i>www.ismatch.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+C:\Users\cagla\source\repos\is_match\is_match\bin\is_match.dll.config
+C:\Users\cagla\source\repos\is_match\is_match\bin\is_match.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\is_match.pdb
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\csc.exe
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\csc.exe.config
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\csc.rsp
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\csi.exe
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\csi.exe.config
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\csi.rsp
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.AppContext.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Console.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.IO.Compression.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Net.Http.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Net.Sockets.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.ValueTuple.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Xml.XPath.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\vbc.exe
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\vbc.exe.config
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\vbc.rsp
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\VBCSCompiler.exe
+C:\Users\cagla\source\repos\is_match\is_match\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cagla\source\repos\is_match\is_match\bin\Antlr3.Runtime.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\Newtonsoft.Json.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Helpers.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Mvc.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Optimization.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Razor.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.WebPages.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.WebPages.Razor.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\WebGrease.dll
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Helpers.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Mvc.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Optimization.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.Razor.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.WebPages.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\System.Web.WebPages.Razor.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\Newtonsoft.Json.xml
+C:\Users\cagla\source\repos\is_match\is_match\bin\Antlr3.Runtime.pdb
+C:\Users\cagla\source\repos\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cagla\source\repos\is_match\is_match\obj\Debug\is_match.csproj.AssemblyReference.cache
+C:\Users\cagla\source\repos\is_match\is_match\obj\Debug\is_match.csproj.CoreCompileInputs.cache
+C:\Users\cagla\source\repos\is_match\is_match\obj\Debug\is_match.csproj.CopyComplete
+C:\Users\cagla\source\repos\is_match\is_match\obj\Debug\is_match.dll
+C:\Users\cagla\source\repos\is_match\is_match\obj\Debug\is_match.pdb
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\is_match.dll.config
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\is_match.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\is_match.pdb
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\csc.exe
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.AppContext.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Net.Http.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Antlr3.Runtime.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Newtonsoft.Json.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Helpers.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Mvc.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Optimization.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Razor.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.WebPages.Deployment.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.WebPages.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.WebPages.Razor.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\WebGrease.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Helpers.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Mvc.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Optimization.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.Razor.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.WebPages.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.WebPages.Deployment.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\System.Web.WebPages.Razor.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Newtonsoft.Json.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Antlr3.Runtime.pdb
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\obj\Debug\is_match.csproj.AssemblyReference.cache
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\obj\Debug\is_match.csproj.CoreCompileInputs.cache
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\obj\Debug\is_match.csproj.CopyComplete
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\obj\Debug\is_match.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\obj\Debug\is_match.pdb
+C:\Users\Ece\Desktop\is_match\is_match\bin\is_match.dll.config
+C:\Users\Ece\Desktop\is_match\is_match\bin\is_match.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\is_match.pdb
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\csc.exe
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\csc.exe.config
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\csc.rsp
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\csi.exe
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\csi.exe.config
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\csi.rsp
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.AppContext.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Console.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Net.Http.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\vbc.exe
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\vbc.exe.config
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\vbc.rsp
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ece\Desktop\is_match\is_match\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ece\Desktop\is_match\is_match\bin\Antlr3.Runtime.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\EntityFramework.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\EntityFramework.SqlServer.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\Newtonsoft.Json.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Helpers.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Mvc.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Optimization.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Razor.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.WebPages.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\WebGrease.dll
+C:\Users\Ece\Desktop\is_match\is_match\bin\EntityFramework.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\EntityFramework.SqlServer.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Helpers.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Mvc.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Optimization.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.Razor.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.WebPages.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\Newtonsoft.Json.xml
+C:\Users\Ece\Desktop\is_match\is_match\bin\Antlr3.Runtime.pdb
+C:\Users\Ece\Desktop\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ece\Desktop\is_match\is_match\obj\Debug\is_match.csproj.AssemblyReference.cache
+C:\Users\Ece\Desktop\is_match\is_match\obj\Debug\is_match.csproj.CoreCompileInputs.cache
+C:\Users\Ece\Desktop\is_match\is_match\obj\Debug\is_match.csproj.CopyComplete
+C:\Users\Ece\Desktop\is_match\is_match\obj\Debug\is_match.dll
+C:\Users\Ece\Desktop\is_match\is_match\obj\Debug\is_match.pdb
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\EntityFramework.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\EntityFramework.SqlServer.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\EntityFramework.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\EntityFramework.SqlServer.xml
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\csc.exe.config
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\csc.rsp
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\csi.exe
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\csi.exe.config
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\csi.rsp
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Console.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.IO.Compression.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Net.Sockets.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.ValueTuple.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Xml.XPath.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\vbc.exe
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\vbc.exe.config
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\vbc.rsp
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\VBCSCompiler.exe
+C:\Users\melte\OneDrive\Masaüstü\is_match\is_match\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\is_match.dll.config
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\is_match.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\is_match.pdb
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\csc.exe
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\csc.exe.config
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\csc.rsp
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\csi.exe
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\csi.exe.config
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\csi.rsp
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.AppContext.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Console.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Net.Http.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\vbc.exe
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\vbc.exe.config
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\vbc.rsp
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Antlr3.Runtime.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\EntityFramework.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\EntityFramework.SqlServer.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Newtonsoft.Json.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Helpers.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Mvc.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Optimization.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Razor.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.WebPages.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\WebGrease.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\EntityFramework.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\EntityFramework.SqlServer.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Helpers.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Mvc.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Optimization.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.Razor.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.WebPages.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Newtonsoft.Json.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Antlr3.Runtime.pdb
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\obj\Debug\is_match.csproj.AssemblyReference.cache
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\obj\Debug\is_match.csproj.CoreCompileInputs.cache
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\obj\Debug\is_match.csproj.CopyComplete
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\obj\Debug\is_match.dll
+C:\Users\Ece\Desktop\Yeni klasör\is_match\is_match\obj\Debug\is_match.pdb
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\is_match.dll.config
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\is_match.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\is_match.pdb
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\csc.exe
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\csc.exe.config
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\csc.rsp
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\csi.exe
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\csi.exe.config
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\csi.rsp
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.AppContext.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Console.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Net.Http.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\vbc.exe
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\vbc.exe.config
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\vbc.rsp
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Antlr3.Runtime.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\EntityFramework.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\EntityFramework.SqlServer.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Newtonsoft.Json.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Helpers.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Mvc.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Optimization.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Razor.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.WebPages.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\WebGrease.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\EntityFramework.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\EntityFramework.SqlServer.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Helpers.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Mvc.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Optimization.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.Razor.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.WebPages.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Newtonsoft.Json.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Antlr3.Runtime.pdb
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\obj\Debug\is_match.csproj.AssemblyReference.cache
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\obj\Debug\is_match.csproj.CoreCompileInputs.cache
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\obj\Debug\is_match.csproj.CopyComplete
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\obj\Debug\is_match.dll
+C:\Users\Ece\Desktop\iş_match\is_match\is_match\obj\Debug\is_match.pdb

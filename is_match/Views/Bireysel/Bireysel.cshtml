@@ -1,0 +1,172 @@
+﻿@using is_match.Models
+@model List<bireysel_uyelik>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UyeOlLayout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Views/Shared/_IsMatch";
+}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Wellco UpSkill HTML Template | About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description website">
+    <meta name="author" content="Maksym Blank">
+    <meta name="keywords" content="website, with, meta, tags">
+    <meta name="robots" content="noindex, follow">
+    <meta name="revisit-after" content="5 month">
+    <meta name="image" content="http://mywebsite.com/image.jpg">
+    <meta name="og:title" content="Title website">
+    <meta name="og:description" content="Description website">
+    <meta name="og:image" content="http://mywebsite.com/image.jpg">
+    <meta name="og:site_name" content="My Website">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Title website">
+    <meta name="twitter:description" content="Description website">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <!-- Css -->
+    <link href="~/Wellco/HTML/assets/css/plugins/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/css/plugins/slick.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/css/plugins/magnific-popup.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/css/plugins/animate.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/fonts/flaticon/flaticon.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/css/style.css" rel="stylesheet">
+    <link href="~/Wellco/HTML/assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>
+        <section class="what_we_know section pt-0" style="width: 1420px; float: right; padding:20px">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    @foreach (var x in Model)
+                    {
+
+
+                        <div class="col-lg-6">
+                            <div class="image_box relative z-1 text-center about_me mb-md-80">
+
+                                <img src="@x.b_foto" style=" border-radius: 50%; width: 450px; height: 500px" alt="Profil resminiz gelecek" img" class="wow fadeInLeft">
+                                <span class="bg-thm-color-three circle_element"></span>
+
+                                <img src="~/Wellco/HTML/assets/images/elements/element_28.png" alt="element" class="element_1">
+                                <img src="~/Wellco/HTML/assets/images/elements/element_29.png" alt="element" class="element_2 rotate_elem">
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="section-title left-align wow fadeInDown">
+                                <h3 class="title mb-0">@x.b_adi @x.b_soyadi</h3>
+                            </div>
+                            <ul class="why-us-list style_2 style_3">
+                                <li class="wow fadeInUp">
+                                    <i class="icon fal fa-check"></i>
+                                    <div class="text">
+                                        <h6 class="mb-0">Tel No: @x.b_telNo</h6>
+                                    </div>
+
+                                </li>
+                                <li class="wow fadeInDown">
+                                    <i class="icon fal fa-check"></i>
+                                    <div class="text">
+                                        <h6 class="mb-0">Email: @x.b_email</h6>
+                                    </div>
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <i class="icon fal fa-check"></i>
+                                    <div class="text">
+                                        <h6 class="mb-0">Adres: @x.b_adres</h6>
+                                    </div>
+                                </li>
+
+                                <li class="wow fadeInDown">
+                                    <i class="icon fal fa-check"></i>
+                                    <div class="text">
+                                        <h6 class="mb-0">Doğum Tarihi: @x.b_dogumTarihi.Value.Day/@x.b_dogumTarihi.Value.Month/@x.b_dogumTarihi.Value.Year</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>}
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="width: 1420px; float: left; padding:20px">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-5 col-lg-6">
+                        @foreach (var y in Model)
+                        {
+
+                            <div class="section-title left-align wow fadeInDown">
+                                <p class="subtitle">
+                                    <i class="fal fa-book"></i>
+                                    Benim Hakkımda
+                                </p>
+                                <h3 class="title">Tecrübelerim</h3>
+                                <p class="mb-0">
+                                    İş Tecrübesi:  @y.b_tecrube
+
+
+                                </p>
+                            </div>
+                            <ul class="about_list style_2 mb-xl-30 wow fadeInUp">
+                                <li>
+                                    Cinsiyet: @y.cinsiyet.cinsiyet_adi
+                                </li>
+                                <li>
+                                    Eğitim Durumu: @y.egitim_durum.egitim_adi
+                                </li>
+                                <li>
+                                    Dil Durumu: @y.dil_adi @y.di_seviye
+                                </li>
+                                <li>
+                                    Okulu :@y.b_okul
+                                </li>
+
+                                <a href="/cv/@y.b_adi-@y.b_soyadi-@y.b_tc-.pdf" class="button" id="cvButton" download="" style=" width: 200px; background-color: teal; color: white;">
+                                    CV İndir
+                                    <i class='bx bx-download'></i>
+                                </a>
+
+
+
+                            </ul>}
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image_box relative z-1 text-center about_me">
+                            <span class="bg-thm-color-three circle_element"></span>
+
+                            <img src="~/Wellco/HTML/assets/images/elements/element_28.png" alt="element" class="element_1">
+                            <img src="~/Wellco/HTML/assets/images/elements/element_29.png" alt="element" class="element_2 rotate_elem">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/slick.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/imagesloaded.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.inview.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.easypiechart.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/wow.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/custom.js"></script>
+</body>

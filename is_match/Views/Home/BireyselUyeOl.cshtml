@@ -1,0 +1,140 @@
+﻿@model is_match.Models.bireysel_uyelik
+@{
+    ViewBag.Title = "BireyselUyeOl";
+    Layout = "~/Views/Shared/_BveKLayout.cshtml";
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>İŞ-MATCH</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon-precomposed" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.png">
+    <link rel="icon" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.png">
+    <link rel="mask-icon" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.svg" color="rgb(36,38,58)">
+    <link rel="shortcut icon" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/media/favicon.png">
+    <link rel="stylesheet" href="~/opalin/uiuxassets-opalin-html-template/HTML/build/css/main.css">
+</head>
+
+
+
+<body class="page page-onboarding preload">
+
+
+
+
+    <section class="row no-gutter reverse-order" style="padding:0px ">
+        <div class="col-one-half middle padding">
+            <div class="max-width-s">
+                <h3>HOŞ GELDİNİZ!</h3>
+                <p class="paragraph">Bireysel Üyelik Bilgilerinizi Girin.</p>
+                <a href="/KurumsalUyeOl/Index">Kurumsal Üyelik</a>
+
+                <form method="post" class="form-group">
+
+
+                    <div>
+                        <label for="name">Ad:</label>
+                        <input type="text" name="b_adi" required>
+                    </div>
+                    <div>
+                        <label for="soyad">Soyad:</label>
+                        <input type="text" name="b_soyadi" required>
+                    </div>
+                    <div>
+                        <label for="tcno">Tc No :</label>
+                        <input type="text" name="b_tc" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="b_email" value="" required>
+                    </div>
+                    <div>
+                        <label for="phone">Tel No:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" type="phone" name="b_telNo" placeholder="(5xx)(123 45 67)">
+                    </div>
+
+                    <div>
+                        <label for="name">Okul:</label>
+                        <input type="text" name="b_okul">
+                    </div>
+
+
+                    <div>
+                        <label for="tarih">Doğum Tarihi:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" id="tarih" type="date" name="b_dogumTarihi">
+                    </div>
+                    <div>
+                        <label for="sifre">Adres:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" id="sifre" type="text" name="b_sifre">
+                    </div>
+                    <div>
+                        <label for="selectID">Eğitim Düzeyi:</label><br>
+                        <select name="egitimDurum_id" id="selectID">
+                            <option value="bos">-</option>
+                            <option value="yuksek">Yüksek Lisans</option>
+                            <option value="uni">Üniversite</option>
+                            <option value="lise">Lise</option>
+                            <option value="ortaokul">Ortaokul</option>
+                            <option value="ilkokul">İlkokul</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tecrube">Son İş Tecrübeniz:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" type="text" name="b_tecrube">
+                    </div>
+                    <div>
+                        <label for="cv">CV:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" type="file" name="b_cv" placeholder="CV">
+                    </div>
+                    <div>
+                        <label for="b_foto">Fotoğraf:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" type="file" name="b_foto" placeholder="Fotografınızı Yükleyin">
+                    </div>
+
+                    <div>
+                        <label for="ehliyet">Ehliyet Belgesi:</label>
+                        <input style=" -webkit-font-smoothing: antialiased; box-sizing: inherit; overflow: visible; font-family: sans-serif; margin: 0; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5rem; border-radius: 0.1875rem; background: #f6f6f9; border: 1px solid #ececee; color: #110f24; padding: 0.5rem 0.75rem; width: 100%; height: 2.5rem;" type="file" name="b_ehliyet" multiple>
+                    </div>
+                    <div>
+                        <label for="selectID">Cinsiyetiniz:</label><br>
+                        <select name="cinsiyet_id" id="selectID">
+                            <option value="bos">-</option>
+                            <option value="kadın">Kadın</option>
+                            <option value="erkek">Erkek</option>
+                            <option value="diger">Belirtmek istemiyorum</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="password">Şifre:</label>
+                        <input type="password" name="b_sifre" required>
+                    </div>
+
+                    <button class="btn btn-secondary"> Kayıt Ol</button>
+
+
+
+
+                </form>
+
+
+            </div>
+            <div class="center max-width-s space-top">
+                <span class="muted">By creating an account, you agree to our </span><a href="#">Terms</a><span class="muted">.</span>
+            </div>
+            <div class="center max-width-s">
+                <span class="muted">Already have an account? </span><a href="login.html">Log In</a>
+            </div>
+        </div>
+        <div class="col-one-half bg-image-05 featured-image"></div>
+    </section>
+
+
+    <script src="~/opalin/uiuxassets-opalin-html-template/HTML/build/js/main.js"></script>
+
+</body>
+</html>

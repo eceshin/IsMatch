@@ -1,0 +1,299 @@
+﻿@using is_match.Models
+@model List<is_ilan>
+
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UyeOlLayout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Wellco UpSkill HTML Template | Blog Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description website">
+    <meta name="author" content="Maksym Blank">
+    <meta name="keywords" content="website, with, meta, tags">
+    <meta name="robots" content="noindex, follow">
+    <meta name="revisit-after" content="5 month">
+    <meta name="image" content="http://mywebsite.com/image.jpg">
+    <meta name="og:title" content="Title website">
+    <meta name="og:description" content="Description website">
+    <meta name="og:image" content="http://mywebsite.com/image.jpg">
+    <meta name="og:site_name" content="My Website">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Title website">
+    <meta name="twitter:description" content="Description website">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <!-- Css -->
+
+    <link href="~/Wellco/HTML/assets/css/plugins/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/css/plugins/slick.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/css/plugins/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/css/plugins/animate.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/fonts/flaticon/flaticon.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/fonts/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/css/style.css" rel="stylesheet" />
+    <link href="~/Wellco/HTML/assets/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <br />
+    <br />
+    <br />
+
+    <!-- Mobile Menu Start -->
+    <aside class="aside_bar aside_bar_left aside_mobile">
+        <!-- logo -->
+        <a href="index.html" class="logo">
+            <img src="~/Wellco/HTML/assets/images/logo.png" alt="logo">
+        </a>
+        <!-- logo -->
+        <!-- Menu -->
+        <nav>
+            <ul class="main-menu">
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">Home</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="index.html">Home v1</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="index-2.html">Home v2</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="index-3.html">Home v3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">Pages</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="about-2.html">About Me</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="videos.html">Videos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Team</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="team.html">Team</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="team-details.html">Team Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="faqs.html">FAQ's</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">Courses</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="courses.html">Courses</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="course-details.html">Course Details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">Blog</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="blog-grid.html">Blog Grid</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="blog-list.html">Blog List</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="blog-masonry.html">Blog Masonry</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="blog-details.html">Blog Details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">Portfolio</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="portfolio-grid.html">Portfolio Grid</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="portfolio-gallery.html">Portfolio Gallery</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="portfolio-masonry.html">Portfolio Masonry</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="portfolio-details.html">Portfolio Details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Menu -->
+    </aside>
+    <div class="aside-overlay trigger-left"></div>
+    <!-- Mobile Menu End -->
+    <!-- Header Start -->
+    <!-- Header End -->
+    <!-- Subheader Start -->
+    <div class="subheader relative z-1" style="background-image: url(https://static.euronews.com/articles/stories/07/31/35/36/1440x810_cmsv2_edcf296d-fa5a-5021-abc3-ee21e477cccb-7313536.jpg );">
+        <div class="container relative z-1">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page_title">İş Match</h1>
+                    <div class="page_breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">İş İlanları</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <img src="~/Wellco/HTML/assets/images/elements/element_19.png" alt="element" class="element_1 slideRightTwo">
+            <img src="~/Wellco/HTML/assets/images/elements/element_10.png" alt="element" class="element_2 zoom-fade">
+            <img src="~/Wellco/HTML/assets/images/elements/element_20.png" alt="element" class="element_3 rotate_elem">
+            <img src="~/Wellco/HTML/assets/images/elements/element_21.png" alt="element" class="element_4 rotate_elem">
+        </div>
+    </div>
+    <!-- Subheader End -->
+    <!-- Section Start -->
+    <div class="section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="padding" style=" margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; width: 828px; float: left; margin-right: 0px;">
+                    <!-- Feature Box Start -->
+                    @foreach (var ilan in Model)
+                    {
+                        <div class="col-lg-3 col-md-6" style="padding: 2px; border: 0; font: inherit; height:360px; vertical-align: baseline; width: 200px; float: left; margin-bottom: 40px; margin-right: 50px">
+                            <div class="features_box wow fadeInUp" style="width:240px" data-wow-delay=".3s">
+                                <div class="icon" style="width:140px; height:100px; text-align:center">
+
+                                    <img src=@ilan.kurumsal_uyelik.k_foto style="width:190px; height:100px;" alt="img">
+                                </div>
+
+                                <h5 style="font-size:15px; text-align:center">@ilan.ilan_ad</h5>
+                                <p  style="width:150px;">@ilan.is_tanim.Substring(0,50) ...</p>
+                                <a href="/IlanDetay/IlanDetay/@ilan.id">
+                                    <span>Devamı</span>
+                                    <i class="fal fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="padding" style="padding: 0;border: 0;font: inherit;vertical-align: baseline;width: 300px;float: left;margin: 0px 41px 20px 0;border-left: 10px; padding-left:55px ">
+
+                    <div class="sidebar style_2" style="width:350px">
+                        <div class="sidebar_widget wow fadeInUp">
+                            <form>
+                                <div class="input-group search_widget">
+                                    <input type="text" name="#" placeholder="Ara.." class="form-control" autocomplete="off">
+                                    <div class="input-group-append ml-0">
+                                        <button type="submit" class="thm-btn bg-thm-color-two thm-color-white thm-color-two-shadow btn-rectangle btn-small">
+                                            <i class="fal fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <br />
+
+                            <div class="sidebar_widget wow fadeInUp">
+                                <h5 class="widget_title">Kategoriler</h5>
+                                <ul class="category_widgets">
+                                    @foreach (var ktg in Model)
+                                    {
+                                        <li>
+                                            <a href="#">@ktg.kategori.kategori_adi</a>
+                                        </li>
+
+                                    }
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Cta Start -->
+    <!-- Cta End -->
+    <!-- Footer Start -->
+    <!-- Footer End -->
+    <a href="#" data-target="html" class="back-to-top ft-sticky">
+        <i class="fal fa-long-arrow-up"></i>
+    </a>
+    <!-- Scripts -->
+   
+
+        <script>
+      // Menü öğesine tıklandığında çalışacak fonksiyon
+            document.querySelector('.menu-item-has-children a[href="/Bireysel/Bireysel"]').addEventListener('click', function(event) {
+                // Varsayılan tıklama davranışını durdur
+                event.preventDefault();
+            // Mevcut sayfanın URL'sini al
+            var url = window.location.href;
+            // URL'deki "int" parametresini al
+            var intValue = parseInt(url.substring(url.lastIndexOf('/') + 1));
+            // Yeni hedef sayfanın URL'sini oluştur
+            var targetUrl = "/Bireysel/Bireysel/" + intValue;
+            // Yeni sayfaya yönlendir
+            window.location.href = targetUrl;
+      });
+    </script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/slick.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/imagesloaded.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.inview.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.easypiechart.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/plugins/wow.min.js"></script>
+    <script src="~/Wellco/HTML/assets/js/custom.js"></script>
+</body>
+
+</html>

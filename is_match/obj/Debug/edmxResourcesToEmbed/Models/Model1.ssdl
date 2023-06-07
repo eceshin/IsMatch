@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IsMatchModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bireysel_uyelik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="b_adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="b_soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="b_tc" Type="nvarchar" MaxLength="11" />
+    <Property Name="b_email" Type="nvarchar" MaxLength="50" />
+    <Property Name="b_telNo" Type="nvarchar" MaxLength="10" />
+    <Property Name="b_adres" Type="nvarchar(max)" />
+    <Property Name="b_dogumTarihi" Type="datetime" />
+    <Property Name="b_sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="b_foto" Type="nvarchar(max)" />
+    <Property Name="egitimDurum_id" Type="int" />
+    <Property Name="b_okul" Type="nvarchar(max)" />
+    <Property Name="b_tecrube" Type="nvarchar" MaxLength="50" />
+    <Property Name="cinsiyet_id" Type="int" />
+    <Property Name="b_ehliyet" Type="nvarchar(max)" />
+    <Property Name="b_cv" Type="nvarchar(max)" />
+    <Property Name="b_bireyselmi" Type="int" />
+    <Property Name="b_uyelikTarihi" Type="datetime" />
+    <Property Name="dil_adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="di_seviye" Type="nchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="cinsiyet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cinsiyet_adi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="egitim_durum">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="egitim_adi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="hakkimizda">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="h_baslik" Type="nvarchar" MaxLength="50" />
+    <Property Name="h_icerik" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="is_ilan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kategori_id" Type="int" />
+    <Property Name="kurumsal_id" Type="int" />
+    <Property Name="ilan_ad" Type="nvarchar(max)" />
+    <Property Name="is_tanim" Type="nvarchar(max)" />
+    <Property Name="is_maas" Type="int" />
+    <Property Name="is_sayi" Type="int" />
+    <Property Name="sehir_id" Type="int" />
+    <Property Name="ilan_baslangic" Type="datetime" />
+    <Property Name="ilan_bitis" Type="datetime" />
+  </EntityType>
+  <EntityType Name="kategori">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kategori_adi" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="kurumsal_uyelik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="k_ilanVerenAdi" Type="nvarchar(max)" />
+    <Property Name="k_sirketAdi" Type="nvarchar(max)" />
+    <Property Name="pozisyon_id" Type="int" />
+    <Property Name="k_sifre" Type="nvarchar(max)" />
+    <Property Name="k_foto" Type="nvarchar(max)" />
+    <Property Name="k_telNo" Type="nvarchar" MaxLength="10" />
+    <Property Name="k_kurulusDate" Type="datetime" />
+    <Property Name="k_email" Type="nvarchar(max)" />
+    <Property Name="k_hakkinda" Type="nvarchar(max)" />
+    <Property Name="k_merNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="b_bireyselmi" Type="int" />
+  </EntityType>
+  <EntityType Name="sehirler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sehir_adi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="y_pozisyon">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pozisyon_adi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yonetici">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="y_adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="y_soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="pozisyon_id" Type="int" />
+    <Property Name="y_foto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="y_mail" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yorumlar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="500" />
+    <Property Name="Yorum" Type="nvarchar(max)" />
+    <Property Name="IlanId" Type="int" />
+  </EntityType>
+  <Association Name="FK_bireysel_uyelik_cinsiyet">
+    <End Role="cinsiyet" Type="Self.cinsiyet" Multiplicity="0..1" />
+    <End Role="bireysel_uyelik" Type="Self.bireysel_uyelik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cinsiyet">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bireysel_uyelik">
+        <PropertyRef Name="cinsiyet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bireysel_uyelik_egitim_durum">
+    <End Role="egitim_durum" Type="Self.egitim_durum" Multiplicity="0..1" />
+    <End Role="bireysel_uyelik" Type="Self.bireysel_uyelik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="egitim_durum">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bireysel_uyelik">
+        <PropertyRef Name="egitimDurum_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_is_ilan_kategori">
+    <End Role="kategori" Type="Self.kategori" Multiplicity="0..1" />
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kategori">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="is_ilan">
+        <PropertyRef Name="kategori_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_is_ilan_kurumsal_uyelik">
+    <End Role="kurumsal_uyelik" Type="Self.kurumsal_uyelik" Multiplicity="0..1" />
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kurumsal_uyelik">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="is_ilan">
+        <PropertyRef Name="kurumsal_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_is_ilan_sehirler">
+    <End Role="sehirler" Type="Self.sehirler" Multiplicity="0..1" />
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sehirler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="is_ilan">
+        <PropertyRef Name="sehir_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kurumsal_uyelik_y_pozisyon">
+    <End Role="y_pozisyon" Type="Self.y_pozisyon" Multiplicity="0..1" />
+    <End Role="kurumsal_uyelik" Type="Self.kurumsal_uyelik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="y_pozisyon">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="kurumsal_uyelik">
+        <PropertyRef Name="pozisyon_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_yonetici_y_pozisyon">
+    <End Role="y_pozisyon" Type="Self.y_pozisyon" Multiplicity="0..1" />
+    <End Role="yonetici" Type="Self.yonetici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="y_pozisyon">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="yonetici">
+        <PropertyRef Name="pozisyon_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_yorumlar_is_ilan">
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="0..1" />
+    <End Role="yorumlar" Type="Self.yorumlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="is_ilan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="yorumlar">
+        <PropertyRef Name="IlanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IsMatchModelStoreContainer">
+    <EntitySet Name="bireysel_uyelik" EntityType="Self.bireysel_uyelik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cinsiyet" EntityType="Self.cinsiyet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="egitim_durum" EntityType="Self.egitim_durum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hakkimizda" EntityType="Self.hakkimizda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="is_ilan" EntityType="Self.is_ilan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kategori" EntityType="Self.kategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kurumsal_uyelik" EntityType="Self.kurumsal_uyelik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sehirler" EntityType="Self.sehirler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="y_pozisyon" EntityType="Self.y_pozisyon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yonetici" EntityType="Self.yonetici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yorumlar" EntityType="Self.yorumlar" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_bireysel_uyelik_cinsiyet" Association="Self.FK_bireysel_uyelik_cinsiyet">
+      <End Role="cinsiyet" EntitySet="cinsiyet" />
+      <End Role="bireysel_uyelik" EntitySet="bireysel_uyelik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bireysel_uyelik_egitim_durum" Association="Self.FK_bireysel_uyelik_egitim_durum">
+      <End Role="egitim_durum" EntitySet="egitim_durum" />
+      <End Role="bireysel_uyelik" EntitySet="bireysel_uyelik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_is_ilan_kategori" Association="Self.FK_is_ilan_kategori">
+      <End Role="kategori" EntitySet="kategori" />
+      <End Role="is_ilan" EntitySet="is_ilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_is_ilan_kurumsal_uyelik" Association="Self.FK_is_ilan_kurumsal_uyelik">
+      <End Role="kurumsal_uyelik" EntitySet="kurumsal_uyelik" />
+      <End Role="is_ilan" EntitySet="is_ilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_is_ilan_sehirler" Association="Self.FK_is_ilan_sehirler">
+      <End Role="sehirler" EntitySet="sehirler" />
+      <End Role="is_ilan" EntitySet="is_ilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kurumsal_uyelik_y_pozisyon" Association="Self.FK_kurumsal_uyelik_y_pozisyon">
+      <End Role="y_pozisyon" EntitySet="y_pozisyon" />
+      <End Role="kurumsal_uyelik" EntitySet="kurumsal_uyelik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_yonetici_y_pozisyon" Association="Self.FK_yonetici_y_pozisyon">
+      <End Role="y_pozisyon" EntitySet="y_pozisyon" />
+      <End Role="yonetici" EntitySet="yonetici" />
+    </AssociationSet>
+    <AssociationSet Name="FK_yorumlar_is_ilan" Association="Self.FK_yorumlar_is_ilan">
+      <End Role="is_ilan" EntitySet="is_ilan" />
+      <End Role="yorumlar" EntitySet="yorumlar" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

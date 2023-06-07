@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IsMatchModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bireysel_uyelik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="b_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="b_soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="b_tc" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="b_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="b_telNo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="b_adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="b_dogumTarihi" Type="DateTime" Precision="3" />
+    <Property Name="b_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="b_foto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="egitimDurum_id" Type="Int32" />
+    <Property Name="b_okul" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="b_tecrube" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cinsiyet_id" Type="Int32" />
+    <Property Name="b_ehliyet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="b_cv" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="b_bireyselmi" Type="Int32" />
+    <Property Name="b_uyelikTarihi" Type="DateTime" Precision="3" />
+    <Property Name="dil_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="di_seviye" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="cinsiyet" Relationship="Self.FK_bireysel_uyelik_cinsiyet" FromRole="bireysel_uyelik" ToRole="cinsiyet" />
+    <NavigationProperty Name="egitim_durum" Relationship="Self.FK_bireysel_uyelik_egitim_durum" FromRole="bireysel_uyelik" ToRole="egitim_durum" />
+  </EntityType>
+  <EntityType Name="cinsiyet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cinsiyet_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="bireysel_uyelik" Relationship="Self.FK_bireysel_uyelik_cinsiyet" FromRole="cinsiyet" ToRole="bireysel_uyelik" />
+  </EntityType>
+  <EntityType Name="egitim_durum">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="egitim_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="bireysel_uyelik" Relationship="Self.FK_bireysel_uyelik_egitim_durum" FromRole="egitim_durum" ToRole="bireysel_uyelik" />
+  </EntityType>
+  <EntityType Name="hakkimizda">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="h_baslik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="h_icerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="is_ilan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kategori_id" Type="Int32" />
+    <Property Name="kurumsal_id" Type="Int32" />
+    <Property Name="ilan_ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="is_tanim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="is_maas" Type="Int32" />
+    <Property Name="is_sayi" Type="Int32" />
+    <Property Name="sehir_id" Type="Int32" />
+    <Property Name="ilan_baslangic" Type="DateTime" Precision="3" />
+    <Property Name="ilan_bitis" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="kategori" Relationship="Self.FK_is_ilan_kategori" FromRole="is_ilan" ToRole="kategori" />
+    <NavigationProperty Name="kurumsal_uyelik" Relationship="Self.FK_is_ilan_kurumsal_uyelik" FromRole="is_ilan" ToRole="kurumsal_uyelik" />
+    <NavigationProperty Name="sehirler" Relationship="Self.FK_is_ilan_sehirler" FromRole="is_ilan" ToRole="sehirler" />
+    <NavigationProperty Name="yorumlar" Relationship="Self.FK_yorumlar_is_ilan" FromRole="is_ilan" ToRole="yorumlar" />
+  </EntityType>
+  <EntityType Name="kategori">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kategori_adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="is_ilan" Relationship="Self.FK_is_ilan_kategori" FromRole="kategori" ToRole="is_ilan" />
+  </EntityType>
+  <EntityType Name="kurumsal_uyelik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="k_ilanVerenAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="k_sirketAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pozisyon_id" Type="Int32" />
+    <Property Name="k_sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="k_foto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="k_telNo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="k_kurulusDate" Type="DateTime" Precision="3" />
+    <Property Name="k_email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="k_hakkinda" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="k_merNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="b_bireyselmi" Type="Int32" />
+    <NavigationProperty Name="is_ilan" Relationship="Self.FK_is_ilan_kurumsal_uyelik" FromRole="kurumsal_uyelik" ToRole="is_ilan" />
+    <NavigationProperty Name="y_pozisyon" Relationship="Self.FK_kurumsal_uyelik_y_pozisyon" FromRole="kurumsal_uyelik" ToRole="y_pozisyon" />
+  </EntityType>
+  <EntityType Name="sehirler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sehir_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="is_ilan" Relationship="Self.FK_is_ilan_sehirler" FromRole="sehirler" ToRole="is_ilan" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="y_pozisyon">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pozisyon_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="kurumsal_uyelik" Relationship="Self.FK_kurumsal_uyelik_y_pozisyon" FromRole="y_pozisyon" ToRole="kurumsal_uyelik" />
+    <NavigationProperty Name="yonetici" Relationship="Self.FK_yonetici_y_pozisyon" FromRole="y_pozisyon" ToRole="yonetici" />
+  </EntityType>
+  <EntityType Name="yonetici">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="y_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="y_soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pozisyon_id" Type="Int32" />
+    <Property Name="y_foto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="y_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="y_pozisyon" Relationship="Self.FK_yonetici_y_pozisyon" FromRole="yonetici" ToRole="y_pozisyon" />
+  </EntityType>
+  <EntityType Name="yorumlar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Yorum" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IlanId" Type="Int32" />
+    <NavigationProperty Name="is_ilan" Relationship="Self.FK_yorumlar_is_ilan" FromRole="yorumlar" ToRole="is_ilan" />
+  </EntityType>
+  <Association Name="FK_bireysel_uyelik_cinsiyet">
+    <End Role="cinsiyet" Type="Self.cinsiyet" Multiplicity="0..1" />
+    <End Role="bireysel_uyelik" Type="Self.bireysel_uyelik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cinsiyet">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bireysel_uyelik">
+        <PropertyRef Name="cinsiyet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bireysel_uyelik_egitim_durum">
+    <End Role="egitim_durum" Type="Self.egitim_durum" Multiplicity="0..1" />
+    <End Role="bireysel_uyelik" Type="Self.bireysel_uyelik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="egitim_durum">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bireysel_uyelik">
+        <PropertyRef Name="egitimDurum_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_is_ilan_kategori">
+    <End Role="kategori" Type="Self.kategori" Multiplicity="0..1" />
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kategori">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="is_ilan">
+        <PropertyRef Name="kategori_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_is_ilan_kurumsal_uyelik">
+    <End Role="kurumsal_uyelik" Type="Self.kurumsal_uyelik" Multiplicity="0..1" />
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kurumsal_uyelik">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="is_ilan">
+        <PropertyRef Name="kurumsal_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_is_ilan_sehirler">
+    <End Role="sehirler" Type="Self.sehirler" Multiplicity="0..1" />
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sehirler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="is_ilan">
+        <PropertyRef Name="sehir_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_yorumlar_is_ilan">
+    <End Role="is_ilan" Type="Self.is_ilan" Multiplicity="0..1" />
+    <End Role="yorumlar" Type="Self.yorumlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="is_ilan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="yorumlar">
+        <PropertyRef Name="IlanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_kurumsal_uyelik_y_pozisyon">
+    <End Role="y_pozisyon" Type="Self.y_pozisyon" Multiplicity="0..1" />
+    <End Role="kurumsal_uyelik" Type="Self.kurumsal_uyelik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="y_pozisyon">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="kurumsal_uyelik">
+        <PropertyRef Name="pozisyon_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_yonetici_y_pozisyon">
+    <End Role="y_pozisyon" Type="Self.y_pozisyon" Multiplicity="0..1" />
+    <End Role="yonetici" Type="Self.yonetici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="y_pozisyon">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="yonetici">
+        <PropertyRef Name="pozisyon_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IsMatchEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bireysel_uyelik" EntityType="Self.bireysel_uyelik" />
+    <EntitySet Name="cinsiyet" EntityType="Self.cinsiyet" />
+    <EntitySet Name="egitim_durum" EntityType="Self.egitim_durum" />
+    <EntitySet Name="hakkimizda" EntityType="Self.hakkimizda" />
+    <EntitySet Name="is_ilan" EntityType="Self.is_ilan" />
+    <EntitySet Name="kategori" EntityType="Self.kategori" />
+    <EntitySet Name="kurumsal_uyelik" EntityType="Self.kurumsal_uyelik" />
+    <EntitySet Name="sehirler" EntityType="Self.sehirler" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="y_pozisyon" EntityType="Self.y_pozisyon" />
+    <EntitySet Name="yonetici" EntityType="Self.yonetici" />
+    <EntitySet Name="yorumlar" EntityType="Self.yorumlar" />
+    <AssociationSet Name="FK_bireysel_uyelik_cinsiyet" Association="Self.FK_bireysel_uyelik_cinsiyet">
+      <End Role="cinsiyet" EntitySet="cinsiyet" />
+      <End Role="bireysel_uyelik" EntitySet="bireysel_uyelik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bireysel_uyelik_egitim_durum" Association="Self.FK_bireysel_uyelik_egitim_durum">
+      <End Role="egitim_durum" EntitySet="egitim_durum" />
+      <End Role="bireysel_uyelik" EntitySet="bireysel_uyelik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_is_ilan_kategori" Association="Self.FK_is_ilan_kategori">
+      <End Role="kategori" EntitySet="kategori" />
+      <End Role="is_ilan" EntitySet="is_ilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_is_ilan_kurumsal_uyelik" Association="Self.FK_is_ilan_kurumsal_uyelik">
+      <End Role="kurumsal_uyelik" EntitySet="kurumsal_uyelik" />
+      <End Role="is_ilan" EntitySet="is_ilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_is_ilan_sehirler" Association="Self.FK_is_ilan_sehirler">
+      <End Role="sehirler" EntitySet="sehirler" />
+      <End Role="is_ilan" EntitySet="is_ilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_yorumlar_is_ilan" Association="Self.FK_yorumlar_is_ilan">
+      <End Role="is_ilan" EntitySet="is_ilan" />
+      <End Role="yorumlar" EntitySet="yorumlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_kurumsal_uyelik_y_pozisyon" Association="Self.FK_kurumsal_uyelik_y_pozisyon">
+      <End Role="y_pozisyon" EntitySet="y_pozisyon" />
+      <End Role="kurumsal_uyelik" EntitySet="kurumsal_uyelik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_yonetici_y_pozisyon" Association="Self.FK_yonetici_y_pozisyon">
+      <End Role="y_pozisyon" EntitySet="y_pozisyon" />
+      <End Role="yonetici" EntitySet="yonetici" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IsMatchModelStoreContainer" CdmEntityContainer="IsMatchEntities">
+    <EntitySetMapping Name="bireysel_uyelik">
+      <EntityTypeMapping TypeName="IsMatchModel.bireysel_uyelik">
+        <MappingFragment StoreEntitySet="bireysel_uyelik">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="b_adi" ColumnName="b_adi" />
+          <ScalarProperty Name="b_soyadi" ColumnName="b_soyadi" />
+          <ScalarProperty Name="b_tc" ColumnName="b_tc" />
+          <ScalarProperty Name="b_email" ColumnName="b_email" />
+          <ScalarProperty Name="b_telNo" ColumnName="b_telNo" />
+          <ScalarProperty Name="b_adres" ColumnName="b_adres" />
+          <ScalarProperty Name="b_dogumTarihi" ColumnName="b_dogumTarihi" />
+          <ScalarProperty Name="b_sifre" ColumnName="b_sifre" />
+          <ScalarProperty Name="b_foto" ColumnName="b_foto" />
+          <ScalarProperty Name="egitimDurum_id" ColumnName="egitimDurum_id" />
+          <ScalarProperty Name="b_okul" ColumnName="b_okul" />
+          <ScalarProperty Name="b_tecrube" ColumnName="b_tecrube" />
+          <ScalarProperty Name="cinsiyet_id" ColumnName="cinsiyet_id" />
+          <ScalarProperty Name="b_ehliyet" ColumnName="b_ehliyet" />
+          <ScalarProperty Name="b_cv" ColumnName="b_cv" />
+          <ScalarProperty Name="b_bireyselmi" ColumnName="b_bireyselmi" />
+          <ScalarProperty Name="b_uyelikTarihi" ColumnName="b_uyelikTarihi" />
+          <ScalarProperty Name="dil_adi" ColumnName="dil_adi" />
+          <ScalarProperty Name="di_seviye" ColumnName="di_seviye" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cinsiyet">
+      <EntityTypeMapping TypeName="IsMatchModel.cinsiyet">
+        <MappingFragment StoreEntitySet="cinsiyet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cinsiyet_adi" ColumnName="cinsiyet_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="egitim_durum">
+      <EntityTypeMapping TypeName="IsMatchModel.egitim_durum">
+        <MappingFragment StoreEntitySet="egitim_durum">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="egitim_adi" ColumnName="egitim_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hakkimizda">
+      <EntityTypeMapping TypeName="IsMatchModel.hakkimizda">
+        <MappingFragment StoreEntitySet="hakkimizda">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="h_baslik" ColumnName="h_baslik" />
+          <ScalarProperty Name="h_icerik" ColumnName="h_icerik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="is_ilan">
+      <EntityTypeMapping TypeName="IsMatchModel.is_ilan">
+        <MappingFragment StoreEntitySet="is_ilan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kategori_id" ColumnName="kategori_id" />
+          <ScalarProperty Name="kurumsal_id" ColumnName="kurumsal_id" />
+          <ScalarProperty Name="ilan_ad" ColumnName="ilan_ad" />
+          <ScalarProperty Name="is_tanim" ColumnName="is_tanim" />
+          <ScalarProperty Name="is_maas" ColumnName="is_maas" />
+          <ScalarProperty Name="is_sayi" ColumnName="is_sayi" />
+          <ScalarProperty Name="sehir_id" ColumnName="sehir_id" />
+          <ScalarProperty Name="ilan_baslangic" ColumnName="ilan_baslangic" />
+          <ScalarProperty Name="ilan_bitis" ColumnName="ilan_bitis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kategori">
+      <EntityTypeMapping TypeName="IsMatchModel.kategori">
+        <MappingFragment StoreEntitySet="kategori">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kategori_adi" ColumnName="kategori_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kurumsal_uyelik">
+      <EntityTypeMapping TypeName="IsMatchModel.kurumsal_uyelik">
+        <MappingFragment StoreEntitySet="kurumsal_uyelik">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="k_ilanVerenAdi" ColumnName="k_ilanVerenAdi" />
+          <ScalarProperty Name="k_sirketAdi" ColumnName="k_sirketAdi" />
+          <ScalarProperty Name="pozisyon_id" ColumnName="pozisyon_id" />
+          <ScalarProperty Name="k_sifre" ColumnName="k_sifre" />
+          <ScalarProperty Name="k_foto" ColumnName="k_foto" />
+          <ScalarProperty Name="k_telNo" ColumnName="k_telNo" />
+          <ScalarProperty Name="k_kurulusDate" ColumnName="k_kurulusDate" />
+          <ScalarProperty Name="k_email" ColumnName="k_email" />
+          <ScalarProperty Name="k_hakkinda" ColumnName="k_hakkinda" />
+          <ScalarProperty Name="k_merNo" ColumnName="k_merNo" />
+          <ScalarProperty Name="b_bireyselmi" ColumnName="b_bireyselmi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sehirler">
+      <EntityTypeMapping TypeName="IsMatchModel.sehirler">
+        <MappingFragment StoreEntitySet="sehirler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sehir_adi" ColumnName="sehir_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsMatchModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="y_pozisyon">
+      <EntityTypeMapping TypeName="IsMatchModel.y_pozisyon">
+        <MappingFragment StoreEntitySet="y_pozisyon">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pozisyon_adi" ColumnName="pozisyon_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yonetici">
+      <EntityTypeMapping TypeName="IsMatchModel.yonetici">
+        <MappingFragment StoreEntitySet="yonetici">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="y_adi" ColumnName="y_adi" />
+          <ScalarProperty Name="y_soyadi" ColumnName="y_soyadi" />
+          <ScalarProperty Name="pozisyon_id" ColumnName="pozisyon_id" />
+          <ScalarProperty Name="y_foto" ColumnName="y_foto" />
+          <ScalarProperty Name="y_mail" ColumnName="y_mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yorumlar">
+      <EntityTypeMapping TypeName="IsMatchModel.yorumlar">
+        <MappingFragment StoreEntitySet="yorumlar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Yorum" ColumnName="Yorum" />
+          <ScalarProperty Name="IlanId" ColumnName="IlanId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

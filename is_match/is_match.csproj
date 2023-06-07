@@ -1,0 +1,1218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20CBB73C-D5DF-4B0A-8111-1992880AD704}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>is_match</RootNamespace>
+    <AssemblyName>is_match</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44379</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnaSayfaController.cs" />
+    <Compile Include="Controllers\BireyselController.cs" />
+    <Compile Include="Controllers\HakkindaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IlanDetayController.cs" />
+    <Compile Include="Controllers\IletisimController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bireysel_uyelik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cinsiyet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\egitim_durum.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\hakkimizda.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IlanYorum.cs" />
+    <Compile Include="Models\is_ilan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\kategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\kurumsal_uyelik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sehirler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\yonetici.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\yorumlar.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\y_pozisyon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\css\main.css" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\index.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\js\jquery.min.js" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\js\main.js" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\media\favicon.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\media\favicon.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\media\reverse-order%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\media\reverse-order.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\about.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\css\main.css" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\forgot-password.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\index.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\js\main.js" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\login.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-01%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-01.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-02%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-02.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-03%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-03.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-04%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-04.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-05%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-05.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-06%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-06.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-07%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-07.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-08%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\image-08.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-01.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-02.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-03.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-04.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-05.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-06.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-dark-01.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-dark-02.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-dark-03.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-dark-04.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-dark-05.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-dark-06.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\bg\shape-hero.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\about-01%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\about-01.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\about-02%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\about-02.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\about-03%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\about-03.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\customers%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\customers.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\editor%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\editor.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\hero-illustration%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\hero-illustration.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\is_adimlari.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\opalin-dashboard%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\opalin-dashboard.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\sketch%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\sketch.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\trusted-company%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\trusted-company-dark%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\trusted-company-dark.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\content\trusted-company.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\favicon.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\media\favicon.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\pricing.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\signup.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\README.txt" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\about.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\forgot-password.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\index.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\js\main.js" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\login.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-01%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-01.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-02%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-02.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-03%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-03.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-04%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-04.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-05%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-05.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-06%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-06.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-07%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-07.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-08%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\image-08.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-01.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-02.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-03.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-04.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-05.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-06.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-dark-01.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-dark-02.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-dark-03.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-dark-04.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-dark-05.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-dark-06.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\shape-hero.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\about-01%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\about-01.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\about-02%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\about-02.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\about-03%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\about-03.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\customers%402x.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\customers.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\editor%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\editor.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\hero-illustration%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\hero-illustration.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\opalin-dashboard%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\opalin-dashboard.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\sketch%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\sketch.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\trusted-company%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\trusted-company-dark%402x.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\trusted-company-dark.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\trusted-company.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\favicon.png" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\favicon.svg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\pricing.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\signup.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Licensing\GPL.txt" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\About.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\Home.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\Onboarding\Forgot Password.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\Onboarding\Log In.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\Onboarding\Sign Up.jpg" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\Pricing.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\._index.html" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\js\._jquery.min.js" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\js\._main.js" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\media\._favicon.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\media\._reverse-order%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\media\._reverse-order.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\._README.txt" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\._index.html" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\._login.html" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\js\._main.js" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\._favicon.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-01%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-01.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-02%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-02.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-03%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-03.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-04%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-04.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-05%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-05.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-06%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-06.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-07%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-07.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-08%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\bg\._image-08.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._about-01%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._about-01.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._about-02%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._about-02.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._about-03%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._about-03.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._customers%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._customers.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._editor%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._editor.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._hero-illustration%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._hero-illustration.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._opalin-dashboard%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._opalin-dashboard.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._sketch%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._sketch.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._trusted-company%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._trusted-company-dark%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._trusted-company-dark.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\media\content\._trusted-company.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\._index.html" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\._login.html" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\js\._main.js" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\._favicon.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\._favicon.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-01%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-01.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-02%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-02.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-03%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-03.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-04%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-04.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-05%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-05.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-06%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-06.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-07%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-07.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-08%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._image-08.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-01.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-02.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-03.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-04.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-05.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-06.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-dark-01.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-dark-02.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-dark-03.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-dark-04.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-dark-05.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-dark-06.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._shape-hero.svg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._about-01%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._about-01.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._about-02%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._about-02.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._about-03%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._about-03.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._customers%402x.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._customers.jpg" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._editor%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._editor.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._hero-illustration%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._hero-illustration.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._opalin-dashboard%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._opalin-dashboard.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._sketch%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._sketch.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._trusted-company%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._trusted-company-dark%402x.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._trusted-company-dark.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._trusted-company.png" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Licensing\._GPL.txt" />
+    <Content Include="organic\documentation1\assets\blueprint-css\ie.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\buttons\icons\cross.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\buttons\icons\key.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\buttons\icons\tick.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\buttons\readme.txt" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\buttons\screen.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\fancy-type\readme.txt" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\fancy-type\screen.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\doc.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\email.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\external.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\feed.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\im.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\pdf.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\visited.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\icons\xls.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\readme.txt" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\link-icons\screen.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\rtl\readme.txt" />
+    <Content Include="organic\documentation1\assets\blueprint-css\plugins\rtl\screen.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\print.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\screen.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\forms.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\grid.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\grid.png" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\ie.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\print.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\reset.css" />
+    <Content Include="organic\documentation1\assets\blueprint-css\src\typography.css" />
+    <Content Include="organic\documentation1\assets\images\contact.png" />
+    <Content Include="organic\documentation1\index.html" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shCore.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCore.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="organic\documentation1\syntax-highlighter\styles\shThemeRDark.css" />
+    <Content Include="organic\orgenik-file\about.html" />
+    <Content Include="organic\orgenik-file\assets\css\bootstrap.css" />
+    <Content Include="organic\orgenik-file\assets\css\responsive.css" />
+    <Content Include="organic\orgenik-file\assets\css\style.css" />
+    <Content Include="organic\orgenik-file\assets\images\banner\banner-img.png" />
+    <Content Include="organic\orgenik-file\assets\images\banner\bg-wave.svg" />
+    <Content Include="organic\orgenik-file\assets\images\bg\about1.png" />
+    <Content Include="organic\orgenik-file\assets\images\bg\banner-bg-2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\bg\bg2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\bg\cta.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\bg\home-1.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\about-img.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\author.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\blog1.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\blog2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\blog3.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\post-thumb-2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\post-thumb-3.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\user.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\blog\aselsan.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\clients\client1.png" />
+    <Content Include="organic\orgenik-file\assets\images\clients\client2.png" />
+    <Content Include="organic\orgenik-file\assets\images\clients\client3.png" />
+    <Content Include="organic\orgenik-file\assets\images\clients\client4.png" />
+    <Content Include="organic\orgenik-file\assets\images\clients\test-1.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\clients\test-2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\clients\test-3.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\clients\test-4.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\gallery\g1.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\gallery\g2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\gallery\g3.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\icon\001-contact.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\002-mail.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\003-maps-and-flags.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\berry.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\healthy-food.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\lemon.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\paprika.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\pumpkin.png" />
+    <Content Include="organic\orgenik-file\assets\images\icon\tomato.png" />
+    <Content Include="organic\orgenik-file\assets\images\logo-dark.png" />
+    <Content Include="organic\orgenik-file\assets\images\logo-white.png" />
+    <Content Include="organic\orgenik-file\assets\images\services\services-1.png" />
+    <Content Include="organic\orgenik-file\assets\images\services\services-2.png" />
+    <Content Include="organic\orgenik-file\assets\images\services\services-3.png" />
+    <Content Include="organic\orgenik-file\assets\images\store\p-1.png" />
+    <Content Include="organic\orgenik-file\assets\images\store\p-2.png" />
+    <Content Include="organic\orgenik-file\assets\images\store\p-3.png" />
+    <Content Include="organic\orgenik-file\assets\images\store\p-4.png" />
+    <Content Include="organic\orgenik-file\assets\images\store\p-5.png" />
+    <Content Include="organic\orgenik-file\assets\images\team\team1.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\team\team2.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\team\team3.jpg" />
+    <Content Include="organic\orgenik-file\assets\images\team\team4.jpg" />
+    <Content Include="organic\orgenik-file\assets\js\bootstrap.js" />
+    <Content Include="organic\orgenik-file\assets\js\contact.js" />
+    <Content Include="organic\orgenik-file\assets\js\script.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\animate-css\animate.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\counterup\jquery.counterup.min.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\counterup\waypoint.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\css\all.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="organic\orgenik-file\assets\vendors\jquery\jquery.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\jquery\jquery.min.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\ajax-loader.gif" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.carousel.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.carousel.min.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.theme.default.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.theme.default.min.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.theme.green.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.theme.green.min.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\assets\owl.video.play.png" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\owl.carousel.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\owl\owl.carousel.min.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\ajax-loader.gif" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\fonts\slick.svg" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick-theme.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick.css" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick.min.js" />
+    <Content Include="organic\orgenik-file\assets\vendors\themify\fonts\themify.svg" />
+    <Content Include="organic\orgenik-file\assets\vendors\themify\themify-icons.css" />
+    <Content Include="organic\orgenik-file\blog-single.html" />
+    <Content Include="organic\orgenik-file\blog.html" />
+    <Content Include="organic\orgenik-file\contact.html" />
+    <Content Include="organic\orgenik-file\index-2.html" />
+    <Content Include="organic\orgenik-file\index.html" />
+    <Content Include="organic\orgenik-file\service.html" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="sliderfoto\pexels-andrea-piacquadio-927022.jpg" />
+    <Content Include="sliderfoto\pexels-andrew-neel-2312369.jpg" />
+    <Content Include="sliderfoto\pexels-christina-morillo-1181360.jpg" />
+    <Content Include="sliderfoto\pexels-cottonbro-studio-7437509-4096x2160-25fps.mp4" />
+    <Content Include="sliderfoto\pexels-fauxels-3184338.jpg" />
+    <Content Include="sliderfoto\pexels-fauxels-3184339.jpg" />
+    <Content Include="Wellco\Documentation\assets\css\fontawesome-all.min.css" />
+    <Content Include="Wellco\Documentation\assets\css\main.css" />
+    <Content Include="Wellco\Documentation\assets\css\vendor\bootstrap.min.css" />
+    <Content Include="Wellco\Documentation\assets\favicon\android-icon-192x192.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-114x114.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-120x120.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-144x144.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-152x152.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-180x180.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-57x57.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-60x60.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-72x72.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\apple-icon-76x76.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\favicon-16x16.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\favicon-32x32.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\favicon-96x96.png" />
+    <Content Include="Wellco\Documentation\assets\favicon\ms-icon-144x144.png" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-brands-400.html" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-brands-400.svg" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-light-300.html" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-light-300.svg" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-regular-400.html" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-regular-400.svg" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-solid-900.html" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-solid-900.svg" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\index.html" />
+    <Content Include="Wellco\Documentation\assets\images\doc\change-default-colors.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\change-email-setting.png" />
+    <Content Include="Wellco\Documentation\assets\images\doc\change-font-awesome-icon-2.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\change-font-awesome-icon-3.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\change-font-awesome-icon-4.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\change-font-awesome-icon.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\changing-banner-image.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\css-structure-1.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\html-structure-1.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\doc\js-structure-1.jpg" />
+    <Content Include="Wellco\Documentation\assets\images\webtend-logo.png" />
+    <Content Include="Wellco\Documentation\assets\js\ie.js" />
+    <Content Include="Wellco\Documentation\assets\js\main.js" />
+    <Content Include="Wellco\Documentation\assets\js\vendor\bootstrap.bundle.min.js" />
+    <Content Include="Wellco\Documentation\assets\js\vendor\easing-1.3.js" />
+    <Content Include="Wellco\Documentation\assets\js\vendor\jquery-migrate.min.js" />
+    <Content Include="Wellco\Documentation\assets\js\vendor\jquery.min.js" />
+    <Content Include="Wellco\Documentation\index.html" />
+    <Content Include="Wellco\HTML\about-2.html" />
+    <Content Include="Wellco\HTML\about.html" />
+    <Content Include="Wellco\HTML\assets\css\plugins\animate.css" />
+    <Content Include="Wellco\HTML\assets\css\plugins\bootstrap.min.css" />
+    <Content Include="Wellco\HTML\assets\css\plugins\images\layers-2x.png" />
+    <Content Include="Wellco\HTML\assets\css\plugins\images\layers.png" />
+    <Content Include="Wellco\HTML\assets\css\plugins\images\marker-icon-2x.png" />
+    <Content Include="Wellco\HTML\assets\css\plugins\images\marker-icon.png" />
+    <Content Include="Wellco\HTML\assets\css\plugins\images\marker-shadow.png" />
+    <Content Include="Wellco\HTML\assets\css\plugins\leaflet.css" />
+    <Content Include="Wellco\HTML\assets\css\plugins\magnific-popup.css" />
+    <Content Include="Wellco\HTML\assets\css\plugins\slick.css" />
+    <Content Include="Wellco\HTML\assets\css\responsive.css" />
+    <Content Include="Wellco\HTML\assets\css\style.css" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.css" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.html" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.svg" />
+    <Content Include="Wellco\HTML\assets\fonts\font-awesome.min.css" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-brands-400.svg" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-light-300.svg" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-regular-400.svg" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-solid-900.svg" />
+    <Content Include="Wellco\HTML\assets\images\about\about.jpg" />
+    <Content Include="Wellco\HTML\assets\images\about\about_img.jpg" />
+    <Content Include="Wellco\HTML\assets\images\about\about_img_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\about\about_me.png" />
+    <Content Include="Wellco\HTML\assets\images\about\about_me_2.png" />
+    <Content Include="Wellco\HTML\assets\images\about\image_1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\about\image_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\about\small.jpg" />
+    <Content Include="Wellco\HTML\assets\images\about\small_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\apple_store.jpg" />
+    <Content Include="Wellco\HTML\assets\images\author\1 - Copy.jpg" />
+    <Content Include="Wellco\HTML\assets\images\author\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\author\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\author\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\author\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\author\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\banner\banner-1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\banner\banner_image.png" />
+    <Content Include="Wellco\HTML\assets\images\banner\banner_img.png" />
+    <Content Include="Wellco\HTML\assets\images\banner\banner_shape.png" />
+    <Content Include="Wellco\HTML\assets\images\banner\element_1.png" />
+    <Content Include="Wellco\HTML\assets\images\banner\element_line.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_1.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_2.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_3.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_4.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_5.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_6.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\bg_7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\bg\sidebar_shape.png" />
+    <Content Include="Wellco\HTML\assets\images\bg\widget_header.png" />
+    <Content Include="Wellco\HTML\assets\images\blog\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\10.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\11.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\12.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\9.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\adv.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\author.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\bg.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\blockquote_bg.png" />
+    <Content Include="Wellco\HTML\assets\images\blog\comments\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\comments\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\comments\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\list\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\blog\list\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\detail_img.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\small_1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\small_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\coach\small_3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\cta_image.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_1.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_10.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_11.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_12.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_13.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_14.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_15.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_16.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_17.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_18.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_19.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_2.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_20.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_21.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_22.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_23.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_24.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_25.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_26.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_27.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_28.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_29.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_3.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_30.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_31.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_32.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_33.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_34.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_35.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_36.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_37.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_38.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_39.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_4.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_40.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_41.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_42.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_5.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_6.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_7.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_8.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\element_9.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\shape.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\square_shape.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\think_element.png" />
+    <Content Include="Wellco\HTML\assets\images\elements\transparent_shape.png" />
+    <Content Include="Wellco\HTML\assets\images\event\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\10.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\11.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\12.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\event\9.jpg" />
+    <Content Include="Wellco\HTML\assets\images\google_store.jpg" />
+    <Content Include="Wellco\HTML\assets\images\icons\check.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_1.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_10.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_11.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_12.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_13.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_14.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_15.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_2.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_3.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_4.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_5.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_6.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_7.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_8.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\icon_9.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\marker.png" />
+    <Content Include="Wellco\HTML\assets\images\icons\youtube.png" />
+    <Content Include="Wellco\HTML\assets\images\logo-white.png" />
+    <Content Include="Wellco\HTML\assets\images\logo.png" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\10.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\11.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\9.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\details_img.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\masonry\9.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\small_1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\small_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\portfolio\small_3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\preloader.svg" />
+    <Content Include="Wellco\HTML\assets\images\quote_img.png" />
+    <Content Include="Wellco\HTML\assets\images\service\1.png" />
+    <Content Include="Wellco\HTML\assets\images\service\2.png" />
+    <Content Include="Wellco\HTML\assets\images\service\3.png" />
+    <Content Include="Wellco\HTML\assets\images\service\4.png" />
+    <Content Include="Wellco\HTML\assets\images\service\5.png" />
+    <Content Include="Wellco\HTML\assets\images\service\6.png" />
+    <Content Include="Wellco\HTML\assets\images\shape_img.png" />
+    <Content Include="Wellco\HTML\assets\images\shape_img_2.png" />
+    <Content Include="Wellco\HTML\assets\images\skills.jpg" />
+    <Content Include="Wellco\HTML\assets\images\skills_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\sponsors\1.png" />
+    <Content Include="Wellco\HTML\assets\images\sponsors\2.png" />
+    <Content Include="Wellco\HTML\assets\images\sponsors\3.png" />
+    <Content Include="Wellco\HTML\assets\images\sponsors\4.png" />
+    <Content Include="Wellco\HTML\assets\images\sponsors\5.png" />
+    <Content Include="Wellco\HTML\assets\images\subheader.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\10.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\11.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\9.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\team_details.jpg" />
+    <Content Include="Wellco\HTML\assets\images\team\video_img.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\1.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\3.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\4.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\5.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\6.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\7.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\8.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video\9.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video_img.png" />
+    <Content Include="Wellco\HTML\assets\images\video_img_2.jpg" />
+    <Content Include="Wellco\HTML\assets\images\video_img_3.png" />
+    <Content Include="Wellco\HTML\assets\images\whyus_bg.jpg" />
+    <Content Include="Wellco\HTML\assets\images\why_us.png" />
+    <Content Include="Wellco\HTML\assets\js\contact-form-script.js" />
+    <Content Include="Wellco\HTML\assets\js\custom.js" />
+    <Content Include="Wellco\HTML\assets\js\form-validator.min.js" />
+    <Content Include="Wellco\HTML\assets\js\form.js" />
+    <Content Include="Wellco\HTML\assets\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Wellco\HTML\assets\js\map.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\bootstrap.bundle.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\imagesloaded.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\isotope.pkgd.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery-3.6.0.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery.countdown.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery.counterup.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery.easypiechart.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery.inview.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery.magnific-popup.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\leaflet.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\slick.min.js" />
+    <Content Include="Wellco\HTML\assets\js\plugins\wow.min.js" />
+    <Content Include="Wellco\HTML\blog-details.html" />
+    <Content Include="Wellco\HTML\blog-grid.html" />
+    <Content Include="Wellco\HTML\blog-list.html" />
+    <Content Include="Wellco\HTML\blog-masonry.html" />
+    <Content Include="Wellco\HTML\contact.html" />
+    <Content Include="Wellco\HTML\course-details.html" />
+    <Content Include="Wellco\HTML\courses.html" />
+    <Content Include="Wellco\HTML\events.html" />
+    <Content Include="Wellco\HTML\faqs.html" />
+    <Content Include="Wellco\HTML\favicon.ico" />
+    <Content Include="Wellco\HTML\index-2.html" />
+    <Content Include="Wellco\HTML\index-3.html" />
+    <Content Include="Wellco\HTML\index.html" />
+    <Content Include="Wellco\HTML\portfolio-details.html" />
+    <Content Include="Wellco\HTML\portfolio-gallery.html" />
+    <Content Include="Wellco\HTML\portfolio-grid.html" />
+    <Content Include="Wellco\HTML\portfolio-masonry.html" />
+    <Content Include="Wellco\HTML\pricing.html" />
+    <Content Include="Wellco\HTML\services.html" />
+    <Content Include="Wellco\HTML\team-details.html" />
+    <Content Include="Wellco\HTML\team.html" />
+    <Content Include="Wellco\HTML\testimonials.html" />
+    <Content Include="Wellco\HTML\videos.html" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Documentation\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\build\.gitignore" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\base\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\base\_grid.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\base\_mixins.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\base\_reset.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\base\_typography.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\base\_variables.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_alerts.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_buttons.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_card.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_footer.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_forms.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_header.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_icons.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_list.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_logo.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_pricing.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_table.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\components\_timeline.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\main.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\pages\_onboarding.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_align.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_background.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_divider.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_full-screen.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_full-width.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_max-width.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_min-width.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_opacity.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_rounded.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_shadow.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\css\tools\_spacing.scss" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\js\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\bg\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\HTML\source\media\content\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Licensing\License.pdf" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Images\Onboarding\.DS_Store" />
+    <Content Include="opalin\uiuxassets-opalin-html-template\Sketch\Opalin HTML Template.sketch" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Documentation\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\build\._.gitignore" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\._css" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\._js" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\._main.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\base\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\base\.__grid.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\base\.__mixins.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\base\.__reset.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\base\.__typography.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\base\.__variables.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\components\.__buttons.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\components\.__footer.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\components\.__forms.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\components\.__header.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\components\.__list.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\components\.__table.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\css\tools\.__background.scss" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\js\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\bg\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\HTML\source\media\content\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Licensing\._License.pdf" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Sketch\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Sketch\._Opalin HTML Template.sketch" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Sketch\Images\._.DS_Store" />
+    <Content Include="opalin\__MACOSX\uiuxassets-opalin-html-template\Sketch\Images\Onboarding\._.DS_Store" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="organic\orgenik-file\assets\vendors\fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\config.rb" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\fonts\slick.eot" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\fonts\slick.ttf" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\fonts\slick.woff" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick-theme.less" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick-theme.scss" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick.less" />
+    <Content Include="organic\orgenik-file\assets\vendors\slick\slick.scss" />
+    <Content Include="organic\orgenik-file\assets\vendors\themify\fonts\themify.eot" />
+    <Content Include="organic\orgenik-file\assets\vendors\themify\fonts\themify.ttf" />
+    <Content Include="organic\orgenik-file\assets\vendors\themify\fonts\themify.woff" />
+    <Content Include="organic\orgenik-file\mail.php" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="cv\Ece-Şahin-44674977939-.pdf" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Wellco\Documentation\assets\favicon\manifest.json" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-brands-400.eot" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-brands-400.ttf" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-brands-400.woff" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-brands-400d41d.eot" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-light-300.eot" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-light-300.ttf" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-light-300.woff" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-light-300d41d.eot" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-regular-400.eot" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-regular-400.ttf" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-regular-400.woff" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-solid-900.eot" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-solid-900.ttf" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-solid-900.woff" />
+    <Content Include="Wellco\Documentation\assets\fonts\font-awesome\fa-solid-900d41d.eot" />
+    <Content Include="Wellco\HTML\assets\css\plugins\bootstrap.min.css.map" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.eot" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.scss" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.ttf" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.woff" />
+    <Content Include="Wellco\HTML\assets\fonts\flaticon\flaticon.woff2" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-brands-400.eot" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-brands-400.ttf" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-brands-400.woff" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-brands-400.woff2" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-light-300.eot" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-light-300.ttf" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-light-300.woff" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-light-300.woff2" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-regular-400.eot" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-regular-400.ttf" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-regular-400.woff" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-regular-400.woff2" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-solid-900.eot" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-solid-900.ttf" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-solid-900.woff" />
+    <Content Include="Wellco\HTML\assets\fonts\fonts\fa-solid-900.woff2" />
+    <Content Include="Wellco\HTML\assets\js\plugins\bootstrap.bundle.min.js.map" />
+    <Content Include="Wellco\HTML\assets\js\plugins\leaflet.js.map" />
+    <Content Include="Wellco\HTML\assets\php\form-process.php" />
+    <Content Include="Views\Shared\_UyeOlLayout.cshtml" />
+    <Content Include="Views\Hakkinda\Index.cshtml" />
+    <Content Include="Views\AnaSayfa\Index.cshtml" />
+    <Content Include="Views\Home\BireyselUyeOl.cshtml" />
+    <Content Include="Views\Iletisim\Index.cshtml" />
+    <Content Include="Views\IlanDetay\IlanDetay.cshtml" />
+    <Content Include="Views\IlanDetay\IlanYorum.cshtml" />
+    <Content Include="Views\Bireysel\Bireysel.cshtml" />
+    <Content Include="Views\IlanDetay\YorumYap.cshtml" />
+    <Content Include="Views\Shared\_BveKLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53895</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

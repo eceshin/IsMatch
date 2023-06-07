@@ -1,0 +1,144 @@
+﻿
+@model is_match.Models.IlanYorum
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UyeOlLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Organic Food Html Template">
+    <meta name="keywords" content="orgenik,organic,food,marketing,shop,product,organic food,farmer,agriculture,fruits,vegetables,healthy food,resposnsive,Fruits Shop, vegetable store">
+
+    <meta name="author" content="themeturn.com">
+
+    <title>Orgenik - Organic Food Html Template</title>
+
+    <!-- Mobile Specific Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/css/bootstrap.css">
+    <!-- Iconfont Css -->
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/themify/themify-icons.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/animate-css/animate.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/vendors/owl/assets/owl.theme.default.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/css/style.css">
+    <link rel="stylesheet" href="~/organic/orgenik-file/assets/css/responsive.css">
+
+</head>
+
+<body id="top-header">
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                @foreach (var ilan in Model.Deger1)
+                {
+                    <div class="col-md-8">
+                        <div class="post-single">
+                            <div class="post-thumb">
+                                <img style="margin:70px; margin-bottom:100px" src=@ilan.kurumsal_uyelik.k_foto alt="" class="img-fluid">
+                                <h1>@ilan.ilan_ad</h1>
+
+                            </div>
+
+                            <div class="single-post-content">
+                                <div class="post-meta mt-4">
+                                    <span class="post-date"><i class="fa fa-calendar-alt mr-2"></i>@ilan.ilan_baslangic.Value.Day.@ilan.ilan_baslangic.Value.Month.@ilan.ilan_baslangic.Value.Year/@ilan.ilan_bitis.Value.Day.@ilan.ilan_bitis.Value.Month.@ilan.ilan_bitis.Value.Year </span>
+                                    <span class="post-comment"><i class="fa fa-comments mr-2"></i>1+ Yorum</span>
+                                    <span><a href="#" class="post-author"><i class="fa fa-user mr-2"></i>@ilan.is_sayi</a></span>
+                                </div>
+
+                                <p class="mt-4 ">@ilan.kurumsal_uyelik.k_hakkinda</p>
+
+                                <h4>Aranılan özellikler</h4>
+                                <p> @ilan.is_tanim</p>
+
+                                <div class="row mt-5 mb-4">
+                                    <div class="col-lg-4">
+                                        <h4>Kategorisi</h4>
+                                        <p> @ilan.kategori.kategori_adi</p>
+
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <h4>Verilecek Tahmini Maaş</h4>
+                                        <p> @ilan.is_maas.Value</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                      
+
+                            <div class="author">
+                                <h3 class="commment-title">Yorumlar</h3>
+
+                                @foreach(var yorum in Model.Deger2) {
+                                <div class="media">
+                                    <div>
+                                        <img style=" margin: 15px; height: 50px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAT9JREFUSEvNltENwjAMRK+bwCTAJjAJMAkwCTAJMAnopASlaRLbxVWJhPpR6mefXV87zHS6mbgYC14A2AJ4ht/NWoAVTOAJwDoDMYFNSEKVgwVM2LURlfAdAFX1FjCheaV5HoQvNSVrwewnJdYcSi5WrQUfAOw1VABHAPx/80wBPodeu4ClwUohHDDCXcB8jR5SsHCfw8UhcwEziGbAVIPFYNoex+xbQ6YaqhjICuZzlJ09X4Ugr9BTUd5U+zFgqX2q+38PjvLyGiUurcu71q2kimtuJMnJ95jDVu17C2xZGqVECL3U1mcN/Cs0JlK1yhpYY4GS3Cl8YJUlsMWJtPDB/i6B6btcj56H/sx1+j0lMM2A0+x5Bl8mJfDbk5jE6hlIDvaa5lLuTTAl9pY5JtH7DpM210Sq2/3YLZHZKv4AKjU2H4PULzUAAAAASUVORK5CYII=" />
+                                    </div>  
+                                    <br />
+                                    <br />
+                                    <div class="media-body">
+                                        <h5 class="mt-0">@yorum.KullaniciAdi  </h5>
+                                       @yorum.Yorum
+
+                                       
+                                    </div>
+                                </div>
+                                }
+                               
+                            </div>
+
+
+                         @Html.Action("YorumYap","IlanDetay")
+                        </div>
+                    </div>}
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--
+    Essential Scripts
+    =====================================-->
+    <!-- Main jQuery -->
+    <script src="~/organic/orgenik-file/assets/vendors/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4.3 -->
+    <script src="~/organic/orgenik-file/assets/js/bootstrap.js"></script>
+    <!-- Counterup -->
+    <script src="~/organic/orgenik-file/assets/vendors/counterup/waypoint.js"></script>
+    <script src="~/organic/orgenik-file/assets/vendors/counterup/jquery.counterup.min.js"></script>
+    <!--  Slick Carousel-->
+    <script src="~/organic/orgenik-file/assets/vendors/slick/slick.min.js"></script>
+    <script src="~/organic/orgenik-file/assets/vendors/owl/owl.carousel.min.js"></script>
+    <script src="~/organic/orgenik-file/assets/js/contact.js"></script>
+    <script src="~/organic/orgenik-file/assets/js/script.js"></script>
+    <script>
+
+
+    </script>
+
+</body>
+</html>

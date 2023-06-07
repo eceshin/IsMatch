@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="451bbbcdf81348b0af9be00e210bf76a" Name="Diagram1">
+        <EntityTypeShape EntityType="IsMatchModel.bireysel_uyelik" Width="1.5" PointX="8" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.cinsiyet" Width="1.5" PointX="5.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.egitim_durum" Width="1.5" PointX="5.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.hakkimizda" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.is_ilan" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.kategori" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.kurumsal_uyelik" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.sehirler" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.y_pozisyon" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.yonetici" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IsMatchModel.yorumlar" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="IsMatchModel.FK_bireysel_uyelik_cinsiyet" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_bireysel_uyelik_egitim_durum" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_is_ilan_kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_is_ilan_kurumsal_uyelik" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_is_ilan_sehirler" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_yorumlar_is_ilan" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_kurumsal_uyelik_y_pozisyon" ManuallyRouted="false" />
+        <AssociationConnector Association="IsMatchModel.FK_yonetici_y_pozisyon" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
